@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "text2image_env"
+version = "0.1.0"
+description = ""
+authors = ["Seitaro Shinagawa <sei.shinagawa@is.naist.jp>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.19.2"
+pandas = "^1.2.2"
+tqdm = "^4.56.2"
+matplotlib = "^3.3.4"
+ipython = "^7.20.0"
+jupyter = "^1.0.0"
+torch = { url = "https://download.pytorch.org/whl/cu111/torch-1.9.0%2Bcu111-cp39-cp39-linux_x86_64.whl" }
+jupyterlab = "^3.1.7"
+transformers = "^4.18.0"
+reformer-pytorch = "^1.4.4"
+pytrec-eval = "^0.5"
+sacred = "^0.8.2"
+gensim = "3.8.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
